@@ -1,0 +1,1 @@
+import produto from "../models/produto_model.js" //vamos para o model!
