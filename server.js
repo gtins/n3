@@ -21,6 +21,7 @@ try {
     console.log("Conexão com o MySQL NÃO estabelecida!", error)
 }
 
+// Define todas as associações de uma vez
 Produto.associate = (models) => {
     Produto.belongsTo(models.Categoria, {
         foreignKey: 'id_categoria',
@@ -31,13 +32,6 @@ Produto.associate = (models) => {
         foreignKey: 'cod_produto',
         as: 'pedidos'
     });
-};
-
-Pedido.associate = (models) => {
-    Pedido.belongsTo(models.Produto, {
-        foreignKey: 'cod_produto',
-        as: 'produto'
-});
 };
 
 Categoria.associate = (models) => {

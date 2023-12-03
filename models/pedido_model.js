@@ -24,5 +24,8 @@ const Pedido = db.define('pedido', {
     timestamps: false,
     freezeTableName: true 
 })
+
+Pedido.belongsTo(Produto, { foreignKey: 'cod_produto', as: 'produto' }); // Associação Pedido -> Produto
+
 export default Pedido;
 

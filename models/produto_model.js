@@ -26,5 +26,6 @@ const Produto = db.define('produto', { //nome da tabela do banco
     timestamps: false,
     freezeTableName: true 
 })
+
 export default Produto;
 

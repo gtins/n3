@@ -13,7 +13,7 @@ export const createCategoria = async (req, res) => {
     try {
         await categoria.create(req.body);
         res.json({
-            "message":"Um novo registro de produtos foi inserido!"
+            "message":"Um novo registro de categoria foi inserido!"
         })
     } catch (e) {
         console.log("Erro ao inserir um novo registro",e);
