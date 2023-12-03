@@ -1,0 +1,31 @@
+GET http://localhost:5000/produto HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:5000/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_produto": "Aço", 
+    "qtde_produto": 3,
+    "id_categoria": 1  
+}
+
+###
+
+POST http://localhost:5000/categoria HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_categoria": "Construção" 
+}
+###
+
+POST http://localhost:5000/pedido HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod_produto": 2,
+    "qtde_pedido": 5
+}
