@@ -42,3 +42,12 @@ GET http://localhost:5000/produto/por-quantidade-pedido/3 HTTP/1.1
 Content-Type: application/json
 ###
 
+//login
+POST http://localhost:5000/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "usuario@teste.com",
+  "senha": "senha123"
+}
+

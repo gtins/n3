@@ -5,10 +5,10 @@ import db from "./config/database.js";
 import produto_rota from "./routes/produto_routes.js"; //vamos para routes!
 import categoria_rota from "./routes/categoria_routes.js";
 import pedido_rota from "./routes/pedido_routes.js"
+import loginRoutes from "./routes/login_route.js"
 
 import Produto from "./models/produto_model.js";
 import Categoria from "./models/categoria_model.js";
-import Pedido from "./models/pedido_model.js";
 
 const server = express();
 server.use(express.json());
@@ -44,5 +44,9 @@ Categoria.associate = (models) => {
 server.use(produto_rota);
 server.use(categoria_rota);
 server.use(pedido_rota);
+server.use(cors({
+    exposedHeaders: ['Authorization'],
+  }));
+server.use(loginRoutes);
 
 server.listen(5000, () => console.log("servidor em execução em http://localhost:5000"));

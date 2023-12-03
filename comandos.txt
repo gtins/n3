@@ -7,3 +7,5 @@ npm install express
 npm install cors
 npm install mysql2
 npm install sequelize
+npm install jsonwebtoken
+npm install jsonwebtoken dotenv
