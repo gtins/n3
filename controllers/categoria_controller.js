@@ -3,7 +3,7 @@ import categoria from "../models/categoria_model";
 export const getCategoria = async (req, res) => {
     try {
         const categorias = await categoria.findAll();
-        res.send(categorias)
+        res.send(categorias);
     } catch (e) {
         console.log("Erro ao acessar a tabela de categorias",e)
     }
