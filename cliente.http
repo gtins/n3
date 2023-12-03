@@ -26,6 +26,6 @@ POST http://localhost:5000/pedido HTTP/1.1
 Content-Type: application/json
 
 {
-    "cod_produto": 2,
-    "qtde_pedido": 5
+    "cod_produto": 3,
+    "qtde_pedido": 9
 }
