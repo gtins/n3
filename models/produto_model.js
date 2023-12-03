@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize"; //beleza
 import db from "../config/database.js";
 import Categoria from "./categoria_model.js"; // importei o modelo da Categoria
 
-const {DataTypes} = Sequelize
+const {DataTypes} = Sequelize;
 
 const Produto = db.define('produto', { //nome da tabela do banco
     cod_produto: {
@@ -26,5 +26,5 @@ const Produto = db.define('produto', { //nome da tabela do banco
     timestamps: false,
     freezeTableName: true 
 })
-export default Produto
+export default Produto;
 

@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize"; //beleza
 import db from "../config/database.js";
 
-const {DataTypes} = Sequelize
+const {DataTypes} = Sequelize;
 
 const Categoria = db.define('categoria', {
     id_categoria: {
@@ -16,5 +16,5 @@ const Categoria = db.define('categoria', {
     timestamps: false,
     freezeTableName: true 
 })
-export default Categoria
+export default Categoria;
 

@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize"; //beleza
 import db from "../config/database.js";
 import Produto from "./produto_model.js";
 
-const {DataTypes} = Sequelize
+const {DataTypes} = Sequelize;
 
 const Pedido = db.define('pedido', {
     num_pedido: {
@@ -24,5 +24,5 @@ const Pedido = db.define('pedido', {
     timestamps: false,
     freezeTableName: true 
 })
-export default Pedido
+export default Pedido;
 
