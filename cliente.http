@@ -10,6 +10,7 @@ Content-Type: application/json
 //novo produto
 POST http://localhost:5000/produto HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIzLCJpYXQiOjE3MDE2NTI3NDQsImV4cCI6MTcwMTY1MzA0NH0.qeMN9RKtP3hiIaYe6Im_uiPOIq8H7mlun-owjkP6KP0
 
 {
     "nome_produto": "Aço", 

@@ -10,10 +10,6 @@ router.post('/login', (req, res) => {
     const userId = 123;
     const token = generateToken(userId); // Substitua userId pelo ID do usuário autenticado
 
-    // Configuração do cabeçalho 'Authorization' com o token JWT
-    res.set('Authorization', `Bearer ${token}`);
-
-    // Retorne o token gerado
     res.status(200).json({ auth: true, token });
   } else {
     res.status(401).json({ auth: false, message: 'Credenciais inválidas' });

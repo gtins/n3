@@ -44,9 +44,9 @@ Categoria.associate = (models) => {
 server.use(produto_rota);
 server.use(categoria_rota);
 server.use(pedido_rota);
-server.use(cors({
-    exposedHeaders: ['Authorization'],
-  }));
+// server.use(cors({
+//     exposedHeaders: ['Authorization'],
+//   }));
 server.use(loginRoutes);
 
 server.listen(5000, () => console.log("servidor em execução em http://localhost:5000"));
